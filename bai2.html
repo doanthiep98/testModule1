@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài2</title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray(arr,x) {
+        let arr2=[];
+        for(let i=0;i<arr.length;i++) {
+            if(arr[i]===x) {
+                continue;
+            }
+            arr2.push(arr[i]);
+        }
+        return arr2;
+    }
+    array=[4,"trab",9,7,"nma",0,9,"nam"]
+    element=9;
+    console.log(tryRemoveFromArray(array,9));
+</script>
+</body>
+</html>

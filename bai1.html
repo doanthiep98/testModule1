@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<script>
+
+    function findMax(listDiemThi){
+        var max = listDiemThi[0];
+        for(var i = 1; i < listDiemThi.length -1; i++){
+            if (max < listDiemThi[i]){
+                max = listDiemThi[i]
+            }
+        }
+        console.log(max)
+    };
+    var arr = [3,2,10,24,11];
+    findMax(arr);
+
+</script>
+</body>
+</html>
