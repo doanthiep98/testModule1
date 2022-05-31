@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+  function isFibonacci(int) {
+    let f1=0;
+    let f2=1;
+    let count=false;
+    for(let i=0; i<=int;i++) {
+      let f3=f1+f2;
+      if(int==f1|| int==f2 || int==f3) {
+        count=true;
+      }
+      f1=f2;
+      f2=f3;
+    }
+    return count;
+  }
+
+  console.log(isFibonacci(5))
+  console.log(isFibonacci(7))
+  console.log(isFibonacci(12))
+  console.log(isFibonacci(3))
+  console.log(isFibonacci(10))
+
+</script>
+</body>
+</html>
